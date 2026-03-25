@@ -1,0 +1,1314 @@
+/* ============================================================
+   CONSTRUCTION HERO — navbar.js injected nav
+   ============================================================ */
+
+/* ============================================================
+   OM OSS SEKSJON
+   ============================================================ */
+
+.om-oss-seksjon {
+  background-color: #f5f6f8;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 680px;
+  position: relative;
+}
+
+.om-oss-seksjon .right-column {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  width: 140px;
+  height: 680px;
+  display: flex;
+  background-color: #1a1e2b;
+  overflow: hidden;
+}
+
+.om-oss-seksjon .OM-OSS-ETABLERT {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 210px;
+  height: 12px;
+  transform: translateX(-50%) rotate(90deg);
+  transform-origin: center center;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.om-oss-seksjon .video-container {
+  position: absolute;
+  top: 60px;
+  left: 580px;
+  width: 680px;
+  height: 572px;
+  background-color: #1a1e2b;
+  overflow: hidden;
+}
+
+.om-oss-seksjon .VIDEO-THUMB {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 572px;
+  object-fit: cover;
+}
+
+.om-oss-seksjon .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 572px;
+  background-color: #1a1e2b38;
+}
+
+.om-oss-seksjon .ellipse {
+  position: absolute;
+  top: 244px;
+  left: 298px;
+  width: 84px;
+  height: 84px;
+  background-color: #ffffffe0;
+  border-radius: 42px;
+}
+
+.om-oss-seksjon .text-wrapper {
+  position: absolute;
+  top: 273px;
+  left: 330px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #1a1e2b;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.om-oss-seksjon .div {
+  position: absolute;
+  top: 530px;
+  left: 256px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff99;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.om-oss-seksjon .rectangle-2 {
+  top: 100px;
+  width: 28px;
+  height: 2px;
+  background-color: #00000080;
+  position: absolute;
+  left: 80px;
+}
+
+.om-oss-seksjon .OM-OSS-ST-LE {
+  position: absolute;
+  top: 114px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000b2;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.om-oss-seksjon .etablert-i {
+  position: absolute;
+  top: 148px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+
+.om-oss-seksjon .rectangle-3 {
+  top: 340px;
+  width: 380px;
+  height: 1px;
+  background-color: #1a1e2b1f;
+  position: absolute;
+  left: 80px;
+}
+
+.om-oss-seksjon .t-mrer-og {
+  position: absolute;
+  top: 360px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #1a1e2bbf;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.om-oss-seksjon .les-mer {
+  position: absolute;
+  top: 520px;
+  left: 80px;
+  width: 152px;
+  height: 48px;
+  display: flex;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1.2px solid;
+  border-color: #1a1e2b;
+}
+
+.om-oss-seksjon .les-mer-2 {
+  margin-top: 16px;
+  height: 16px;
+  margin-left: 39px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2b;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer-brevan-style {
+  background-color: #141621;
+  width: 100%;
+  min-width: 1440px;
+  height: 320px;
+  position: relative;
+}
+
+.footer-brevan-style .separator {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 1280px;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+.footer-brevan-style .text-wrapper {
+  position: absolute;
+  top: 56px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.footer-brevan-style .div {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 220px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #999eaa;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-2 {
+  position: absolute;
+  top: 56px;
+  left: 480px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #999eaa;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-3 {
+  position: absolute;
+  top: 80px;
+  left: 480px;
+  width: 160px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-4 {
+  position: absolute;
+  top: 106px;
+  left: 480px;
+  width: 160px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-5 {
+  position: absolute;
+  top: 132px;
+  left: 480px;
+  width: 160px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-6 {
+  position: absolute;
+  top: 158px;
+  left: 480px;
+  width: 160px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-7 {
+  position: absolute;
+  top: 56px;
+  left: 760px;
+  width: 200px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #999eaa;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-8 {
+  position: absolute;
+  top: 80px;
+  left: 760px;
+  width: 260px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-9 {
+  position: absolute;
+  top: 106px;
+  left: 760px;
+  width: 260px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-10 {
+  position: absolute;
+  top: 132px;
+  left: 760px;
+  width: 260px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .bottom-separator {
+  position: absolute;
+  top: 264px;
+  left: 0;
+  width: 1440px;
+  height: 1px;
+  background-color: #ffffff14;
+}
+
+.footer-brevan-style .element-orkland-t {
+  position: absolute;
+  top: 282px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #999eaa;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer-brevan-style .text-wrapper-11 {
+  position: absolute;
+  top: 282px;
+  left: 1200px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #999eaa;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* ============================================================
+   KONTAKT SEKSJON
+   ============================================================ */
+
+.kontakt-seksjon {
+  background-color: #1a1e2b;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 780px;
+  position: relative;
+}
+
+.kontakt-seksjon .frame {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  width: 140px;
+  height: 780px;
+  display: flex;
+  background-color: #f3c228;
+  overflow: hidden;
+}
+
+.kontakt-seksjon .KONTAKT-ST-LE {
+  margin-top: 577px;
+  width: 244px;
+  height: 12px;
+  margin-left: -46px;
+  transform: rotate(90deg);
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2b;
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 28px;
+  height: 2px;
+  background-color: #f3c228;
+}
+
+.kontakt-seksjon .text-wrapper {
+  position: absolute;
+  top: 94px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .div {
+  position: absolute;
+  top: 122px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .vi-svarer-raskt-ta {
+  position: absolute;
+  top: 224px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff99;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.kontakt-seksjon .rectangle-2 {
+  position: absolute;
+  top: 312px;
+  left: 80px;
+  width: 440px;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+.kontakt-seksjon .text-wrapper-2 {
+  position: absolute;
+  top: 326px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #f3c228e6;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .text-wrapper-3 {
+  position: absolute;
+  top: 348px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  color: #ffffffe6;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-3 {
+  position: absolute;
+  top: 412px;
+  left: 80px;
+  width: 440px;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+.kontakt-seksjon .text-wrapper-4 {
+  position: absolute;
+  top: 426px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #f3c228e6;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .text-wrapper-5 {
+  position: absolute;
+  top: 448px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  color: #ffffffe6;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-4 {
+  position: absolute;
+  top: 512px;
+  left: 80px;
+  width: 440px;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+.kontakt-seksjon .text-wrapper-6 {
+  position: absolute;
+  top: 526px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #f3c228e6;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .text-wrapper-7 {
+  position: absolute;
+  top: 548px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  color: #ffffffe6;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-5 {
+  position: absolute;
+  top: 612px;
+  left: 80px;
+  width: 440px;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+/* --- Form card --- */
+.kontakt-seksjon .form-card {
+  position: absolute;
+  top: 60px;
+  left: 720px;
+  width: 540px;
+  height: 648px;
+  background-color: #212534;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.kontakt-seksjon .text-wrapper-8 {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .text-wrapper-9 {
+  position: absolute;
+  top: 120px;
+  left: 48px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-6 {
+  position: absolute;
+  top: 142px;
+  left: 48px;
+  width: 444px;
+  height: 48px;
+  background-color: #ffffff0f;
+  border-radius: 4px;
+}
+
+.kontakt-seksjon .text-wrapper-10 {
+  position: absolute;
+  top: 156px;
+  left: 64px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff40;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.kontakt-seksjon .text-wrapper-11 {
+  position: absolute;
+  top: 232px;
+  left: 48px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-7 {
+  position: absolute;
+  top: 254px;
+  left: 48px;
+  width: 444px;
+  height: 48px;
+  background-color: #ffffff0f;
+  border-radius: 4px;
+}
+
+.kontakt-seksjon .text-wrapper-12 {
+  position: absolute;
+  top: 268px;
+  left: 64px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff40;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.kontakt-seksjon .text-wrapper-13 {
+  position: absolute;
+  top: 344px;
+  left: 48px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-8 {
+  position: absolute;
+  top: 366px;
+  left: 48px;
+  width: 444px;
+  height: 48px;
+  background-color: #ffffff0f;
+  border-radius: 4px;
+}
+
+.kontakt-seksjon .text-wrapper-14 {
+  position: absolute;
+  top: 380px;
+  left: 64px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff40;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.kontakt-seksjon .text-wrapper-15 {
+  position: absolute;
+  top: 456px;
+  left: 48px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.kontakt-seksjon .rectangle-9 {
+  position: absolute;
+  top: 478px;
+  left: 48px;
+  width: 444px;
+  height: 88px;
+  background-color: #ffffff0f;
+  border-radius: 4px;
+}
+
+.kontakt-seksjon .text-wrapper-16 {
+  position: absolute;
+  top: 492px;
+  left: 64px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff40;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.kontakt-seksjon .send-melding-wrapper {
+  position: absolute;
+  top: 574px;
+  left: 48px;
+  width: 200px;
+  height: 48px;
+  display: flex;
+  background-color: #f3c228;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.kontakt-seksjon .send-melding {
+  margin-top: 15px;
+  width: 113px;
+  height: 17px;
+  margin-left: 43px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #1a1e2b;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.kontakt-seksjon .p {
+  position: absolute;
+  top: 588px;
+  left: 264px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff4c;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   TJENESTER SEKSJON
+   ============================================================ */
+
+.tjenester-seksjon {
+  background-color: #f5f6f8;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1462px;
+  position: relative;
+}
+
+.tjenester-seksjon .frame {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  width: 140px;
+  height: 1462px;
+  display: flex;
+  background-color: #1a1e2b;
+  overflow: hidden;
+}
+
+.tjenester-seksjon .TJENESTER-ST-LE {
+  margin-top: 703.5px;
+  width: 259px;
+  height: 12px;
+  margin-left: -47.5px;
+  transform: rotate(90deg);
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.tjenester-seksjon .rectangle {
+  position: absolute;
+  top: 72px;
+  left: 80px;
+  width: 28px;
+  height: 2px;
+  background-color: #00000080;
+}
+
+.tjenester-seksjon .text-wrapper {
+  position: absolute;
+  top: 86px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000b2;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.tjenester-seksjon .div {
+  position: absolute;
+  top: 116px;
+  left: 80px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b;
+  font-size: 52px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* --- Cards shared --- */
+.tjenester-seksjon .card-nybygg,
+.tjenester-seksjon .card-tilbygg-pbygg,
+.tjenester-seksjon .card-renovering,
+.tjenester-seksjon .card-oppussing,
+.tjenester-seksjon .card-garasje,
+.tjenester-seksjon .card-tegning-av {
+  position: absolute;
+  width: 580px;
+  height: 340px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.tjenester-seksjon .card-nybygg     { top: 210px; left: 80px; }
+.tjenester-seksjon .card-tilbygg-pbygg { top: 210px; left: 692px; }
+.tjenester-seksjon .card-renovering { top: 582px; left: 80px; }
+.tjenester-seksjon .card-oppussing  { top: 582px; left: 692px; }
+.tjenester-seksjon .card-garasje    { top: 954px; left: 80px; }
+.tjenester-seksjon .card-tegning-av { top: 954px; left: 692px; }
+
+.tjenester-seksjon .image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 580px;
+  height: 210px;
+  background-color: #d1d3d7;
+}
+
+.tjenester-seksjon .card-bilde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 580px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.tjenester-seksjon .rectangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 580px;
+  height: 210px;
+  background-color: #f3c22814;
+}
+
+.tjenester-seksjon .p {
+  position: absolute;
+  top: 97px;
+  left: 210px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2b40;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.tjenester-seksjon .text-wrapper-2 {
+  position: absolute;
+  top: 230px;
+  left: 24px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 200;
+  color: #1a1e2ba6;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.tjenester-seksjon .text-wrapper-3 {
+  position: absolute;
+  top: 248px;
+  left: 24px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tjenester-seksjon .text-wrapper-4 {
+  position: absolute;
+  top: 282px;
+  left: 24px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #1a1e2bbf;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.tjenester-seksjon .les-mer {
+  position: absolute;
+  top: 293px;
+  left: 480px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2bd9;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+}
+
+.tjenester-seksjon .rectangle-3 {
+  position: absolute;
+  top: 337px;
+  left: 0;
+  width: 580px;
+  height: 3px;
+  background-color: #f3c228;
+}
+
+/* --- CTA bar --- */
+.tjenester-seksjon .frame-2 {
+  position: absolute;
+  top: 1350px;
+  left: 80px;
+  width: 1192px;
+  height: 64px;
+  gap: 538px;
+  background-color: #1a1e2b;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+}
+
+.tjenester-seksjon .text-wrapper-5 {
+  margin-top: 20px;
+  width: 422px;
+  height: 20px;
+  margin-left: 40px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  color: #ffffffd9;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.tjenester-seksjon .ta-kontakt-wrapper {
+  margin-top: 12px;
+  width: 152px;
+  height: 40px;
+  background-color: #f3c228;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.tjenester-seksjon .ta-kontakt {
+  margin-top: 12px;
+  width: 85px;
+  height: 16px;
+  margin-left: 33px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #1a1e2b;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* ============================================================
+   CONSTRUCTION HERO
+   ============================================================ */
+
+.construction-hero {
+  background-color: #f5f6f8;
+  width: 100%;
+  min-width: 1440px;
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.construction-hero .image {
+  margin-top: 14px;
+  width: 26px;
+  height: 31px;
+  margin-left: 31px;
+  aspect-ratio: 0.83;
+  object-fit: cover;
+}
+
+.construction-hero .t-MRER-BYGGSERVICE {
+  margin-top: 24px;
+  width: 262px;
+  height: 17px;
+  margin-left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: normal;
+}
+
+.construction-hero .text-wrapper {
+  width: 59px;
+  margin-left: 246px;
+  margin-top: 25px;
+  height: 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .div {
+  width: 63px;
+  margin-left: 61px;
+  margin-top: 25px;
+  height: 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .text-wrapper-2 {
+  width: 67px;
+  margin-left: 57px;
+  margin-top: 25px;
+  height: 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .text-wrapper-3 {
+  margin-top: 25px;
+  width: 47px;
+  height: 16px;
+  margin-left: 53px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .text-wrapper-4 {
+  width: 48px;
+  margin-left: 73px;
+  margin-top: 25px;
+  height: 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .ellipse {
+  margin-top: 18px;
+  width: 32px;
+  height: 32px;
+  margin-left: 244px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #b2b7bf;
+}
+
+/* --- Right column --- */
+.construction-hero .right-column {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  width: 140px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 281.5px;
+  background-color: #1a1e2b;
+  overflow: hidden;
+}
+
+.construction-hero .rectangle {
+  margin-left: 69px;
+  width: 1px;
+  height: 80px;
+  margin-top: 380px;
+  background-color: #b2b7bf80;
+}
+
+.construction-hero .ORKLAND-t {
+  margin-left: -55.5px;
+  width: 275px;
+  height: 12px;
+  transform: rotate(90deg);
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* --- Photo frame --- */
+.construction-hero .photo-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 100%;
+  background-color: #1a1e2b;
+}
+
+.construction-hero .PHOTO-BG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.construction-hero .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 100%;
+  background: linear-gradient(to bottom, #1a1d2b40 0%, #1a1d2b55 50%, #1a1d2bcc 80%, #1a1d2bf0 100%);
+}
+
+.construction-hero .rectangle-2 {
+  bottom: 417px;
+  width: 28px;
+  height: 2px;
+  background-color: #ffffff99;
+  position: absolute;
+  left: 80px;
+}
+
+.construction-hero .KVALITET-PRESISJON {
+  position: absolute;
+  bottom: 390px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffffb2;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.construction-hero .t-mrer-byggteknikker {
+  position: absolute;
+  bottom: 230px;
+  left: 80px;
+  width: 880px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+
+.construction-hero .hero-cta {
+  position: absolute;
+  bottom: 162px;
+  left: 80px;
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 32px;
+  background-color: #ffffff;
+  color: #1a1e2b;
+  border: none;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.construction-hero .p {
+  position: absolute;
+  bottom: 99px;
+  left: 80px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.construction-hero .text-wrapper-5 {
+  position: absolute;
+  bottom: 68px;
+  left: 316px;
+  transform: translateX(-50%);
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffffe6;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.construction-hero .rectangle-3 {
+  bottom: 135px;
+  width: 900px;
+  height: 1px;
+  background-color: #ffffffcc;
+  position: absolute;
+  left: 80px;
+}
+
+.construction-hero .ellipse-2 {
+  position: absolute;
+  bottom: 92px;
+  left: 302px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1px solid #ffffff;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffffe6;
+  font-size: 13px;
+  line-height: 1;
+}

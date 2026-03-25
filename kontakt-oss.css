@@ -1,0 +1,341 @@
+/* ============================================================
+   KONTAKT OSS — HERO
+   ============================================================ */
+
+.kontakt-hero {
+  position: relative;
+  width: 100%;
+  min-width: 1440px;
+  height: 360px;
+  overflow: hidden;
+  background-color: #1a1e2b;
+}
+
+.kontakt-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 1300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kontakt-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 1300px;
+  background-color: #1a1d2b88;
+}
+
+.kontakt-hero__content {
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  transform: translateY(-50%);
+}
+
+.kontakt-hero__eyebrow-line {
+  width: 28px;
+  height: 2px;
+  background-color: #ffffff99;
+  margin-bottom: 14px;
+}
+
+.kontakt-hero__eyebrow {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffffb2;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  margin-bottom: 16px;
+}
+
+.kontakt-hero__title {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+
+.kontakt-hero__sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 360px;
+  background-color: #1a1e2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.kontakt-hero__sidebar-text {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #b2b7bf;
+  font-size: 10px;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  transform: rotate(90deg);
+}
+
+/* ============================================================
+   KONTAKT BODY
+   ============================================================ */
+
+.kontakt-body {
+  width: 1300px;
+  min-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 80px 100px 80px;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* --- Left: info --- */
+.kontakt-info {
+  flex: 0 0 380px;
+  padding-top: 8px;
+}
+
+.kontakt-info__lead {
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #1a1e2bcc;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+
+.kontakt-info__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #1a1e2b1f;
+  margin-bottom: 24px;
+}
+
+.kontakt-info__row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.kontakt-info__label {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2b80;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.kontakt-info__value {
+  font-family: "Raleway", Helvetica;
+  font-weight: 300;
+  color: #1a1e2b;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* --- Right: form card --- */
+.kontakt-form-card {
+  flex: 1;
+  background-color: #212534;
+  border-radius: 8px;
+  padding: 52px 52px 48px;
+}
+
+.kontakt-form-card__title {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kontakt-form__row {
+  display: flex;
+  gap: 16px;
+}
+
+.kontakt-form__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kontakt-form__field--full {
+  flex: unset;
+}
+
+.kontakt-form__label {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff80;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.kontakt-form__input {
+  height: 48px;
+  background-color: #ffffff0f;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.kontakt-form__input::placeholder {
+  color: #ffffff40;
+}
+
+.kontakt-form__input:focus {
+  background-color: #ffffff18;
+}
+
+.kontakt-form__textarea {
+  background-color: #ffffff0f;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  transition: background-color 0.2s;
+}
+
+.kontakt-form__textarea::placeholder {
+  color: #ffffff40;
+}
+
+.kontakt-form__textarea:focus {
+  background-color: #ffffff18;
+}
+
+.kontakt-form__captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.kontakt-form__captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff08;
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.kontakt-form__captcha-label {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff60;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.kontakt-form__captcha-code {
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #f3c228;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-decoration: line-through;
+  text-decoration-color: #ffffff30;
+  font-style: italic;
+}
+
+.kontakt-form__captcha-input {
+  width: 120px;
+  height: 48px;
+  background-color: #ffffff0f;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 4px;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.kontakt-form__captcha-input:focus {
+  background-color: #ffffff18;
+}
+
+.kontakt-form__submit {
+  flex: 1;
+  height: 48px;
+  background-color: #f3c228;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #1a1e2b;
+  font-size: 14px;
+  letter-spacing: 0;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.kontakt-form__submit:hover {
+  background-color: #e6b520;
+}
+
+.kontakt-form__submit:active {
+  transform: scale(0.98);
+}
+
+.kontakt-form__privacy {
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #ffffff4c;
+  font-size: 11px;
+  letter-spacing: 0;
+  text-align: right;
+  margin-top: -4px;
+}
+
+/* ============================================================
+   KART
+   ============================================================ */
+
+.kontakt-kart {
+  width: 100%;
+  min-width: 1440px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.kontakt-kart__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}

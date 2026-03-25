@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Kontakt oss — Ståle Kirkaune AS</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="om-oss.css" />
+    <link rel="stylesheet" href="kontakt-oss.css" />
+  </head>
+  <body>
+
+    <div id="navbar-inject"></div>
+
+    <!-- Hero -->
+    <div class="kontakt-hero">
+      <img class="kontakt-hero__bg" src="img/PHOTO-BG.png" alt="" />
+      <div class="kontakt-hero__overlay"></div>
+      <div class="kontakt-hero__content">
+        <div class="kontakt-hero__eyebrow-line"></div>
+        <p class="kontakt-hero__eyebrow">KONTAKT&nbsp;&nbsp;·&nbsp;&nbsp;STÅLE KIRKAUNE AS</p>
+        <h1 class="kontakt-hero__title">Kontakt oss.</h1>
+      </div>
+      <div class="kontakt-hero__sidebar">
+        <span class="kontakt-hero__sidebar-text">ORKLAND&nbsp;&nbsp;·&nbsp;&nbsp;TØMMERKONSTRUKSJON</span>
+      </div>
+    </div>
+
+    <!-- Intro + Form -->
+    <div class="kontakt-body">
+
+      <!-- Left: intro + kontaktinfo -->
+      <div class="kontakt-info">
+        <p class="kontakt-info__lead">
+          Ta gjerne kontakt for en uforpliktende prat om dine byggeplaner eller andre tjenester jeg utfører.
+          Vi stiller også gjerne opp på en gratis og uforpliktende befaring.
+        </p>
+
+        <div class="kontakt-info__divider"></div>
+
+        <div class="kontakt-info__row">
+          <span class="kontakt-info__label">Telefon</span>
+          <span class="kontakt-info__value">+47 XXX XX XXX</span>
+        </div>
+        <div class="kontakt-info__divider"></div>
+
+        <div class="kontakt-info__row">
+          <span class="kontakt-info__label">E-post</span>
+          <span class="kontakt-info__value">post@stalekirkaune.no</span>
+        </div>
+        <div class="kontakt-info__divider"></div>
+
+        <div class="kontakt-info__row">
+          <span class="kontakt-info__label">Adresse</span>
+          <span class="kontakt-info__value">Hemnevegen 107, 7320 Fannrem<br />Orkland Kommune, Trøndelag</span>
+        </div>
+        <div class="kontakt-info__divider"></div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="kontakt-form-card">
+        <h2 class="kontakt-form-card__title">Send en melding</h2>
+
+        <form class="kontakt-form" action="#" method="post">
+          <div class="kontakt-form__row">
+            <div class="kontakt-form__field">
+              <label class="kontakt-form__label">Navn</label>
+              <input class="kontakt-form__input" type="text" placeholder="Ditt fulle navn" name="navn" />
+            </div>
+            <div class="kontakt-form__field">
+              <label class="kontakt-form__label">Telefon</label>
+              <input class="kontakt-form__input" type="tel" placeholder="+47 000 00 000" name="telefon" />
+            </div>
+          </div>
+
+          <div class="kontakt-form__row">
+            <div class="kontakt-form__field">
+              <label class="kontakt-form__label">E-post</label>
+              <input class="kontakt-form__input" type="email" placeholder="din@epost.no" name="epost" />
+            </div>
+            <div class="kontakt-form__field">
+              <label class="kontakt-form__label">Emne</label>
+              <input class="kontakt-form__input" type="text" placeholder="Hva gjelder det?" name="emne" />
+            </div>
+          </div>
+
+          <div class="kontakt-form__field kontakt-form__field--full">
+            <label class="kontakt-form__label">Beskjed</label>
+            <textarea class="kontakt-form__textarea" placeholder="Beskriv prosjektet eller spørsmålet ditt…" name="beskjed" rows="6"></textarea>
+          </div>
+
+          <div class="kontakt-form__captcha-row">
+            <div class="kontakt-form__captcha-box">
+              <span class="kontakt-form__captcha-label">Skriv inn denne koden:</span>
+              <span class="kontakt-form__captcha-code">Q9 AU</span>
+            </div>
+            <input class="kontakt-form__captcha-input" type="text" placeholder="" name="captcha" />
+            <button class="kontakt-form__submit" type="submit">Send melding</button>
+          </div>
+
+          <p class="kontakt-form__privacy">Vi deler aldri din informasjon med tredjeparter.</p>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Kart -->
+    <div class="kontakt-kart">
+      <iframe
+        class="kontakt-kart__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.4!2d9.8!3d63.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46639e6b3c4e3e3b%3A0x0!2sHemnevegen%20107%2C%207320%20Fannrem!5e0!3m2!1sno!2sno!4v1700000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Kart — Ståle Kirkaune AS"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-brevan-style">
+      <div class="separator"></div>
+      <div class="text-wrapper">Orkland Tømmerkonstruksjon AS</div>
+      <p class="div">Kvalitet i tre — siden 1987</p>
+      <div class="text-wrapper-2">Navigasjon</div>
+      <div class="text-wrapper-3">Hjem</div>
+      <div class="text-wrapper-4">Om oss</div>
+      <div class="text-wrapper-5">Tjenester</div>
+      <div class="text-wrapper-6">Kontakt</div>
+      <div class="text-wrapper-7">Kontakt</div>
+      <div class="text-wrapper-8">post@stalekirkaune.no</div>
+      <div class="text-wrapper-9">+47 XXX XX XXX</div>
+      <div class="text-wrapper-10">Orkland Kommune, Trøndelag</div>
+      <div class="bottom-separator"></div>
+      <p class="element-orkland-t">© 2026 Orkland Tømmerkonstruksjon AS&nbsp;&nbsp;—&nbsp;&nbsp;Org.nr. 000 000 000</p>
+      <div class="text-wrapper-11">Personvernerklæring</div>
+    </div>
+
+  <script src="navbar.js"></script>
+  </body>
+</html>

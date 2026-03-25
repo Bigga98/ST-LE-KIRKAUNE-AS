@@ -1,0 +1,102 @@
+/* ============================================================
+   REFERANSER SEKSJON
+   ============================================================ */
+
+.referanser-seksjon {
+  width: 100%;
+  min-width: 1440px;
+  background-color: #dfe1e7;
+  padding: 80px 80px 100px 80px;
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1220px;
+}
+
+/* Store kort (med sitat) */
+.ref-card {
+  background-color: #f2f3f6;
+  border-radius: 4px;
+  padding: 40px 36px 36px 36px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ref-card--stor {
+  grid-column: span 1;
+}
+
+/* Små kort (bare navn + stjerner) */
+.ref-card--liten {
+  padding: 32px 36px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ref-quote {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b1a;
+  font-size: 80px;
+  line-height: 0.6;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.ref-tittel {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.ref-tekst {
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #1a1e2bbf;
+  font-size: 15px;
+  line-height: 26px;
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.ref-meta {
+  border-top: 1px solid #1a1e2b14;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.ref-card--liten .ref-meta {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.ref-navn {
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #1a1e2b;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+}
+
+.ref-dato {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #1a1e2b66;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.ref-stjerner {
+  font-size: 18px;
+  color: #f3c228;
+  letter-spacing: 2px;
+}
