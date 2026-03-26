@@ -1,0 +1,1155 @@
+/* ============================================================
+   RESPONSIVE — Ståle Kirkaune AS
+   Mobiltilapasning for alle seksjoner.
+   ============================================================ */
+
+/* ============================================================
+   NAVBAR — Hamburger + mobil-meny
+   ============================================================ */
+
+.navbar-page .hamburger {
+  display: none;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  z-index: 400;
+}
+
+.navbar-page .hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-page .hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-page .hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-page .hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.navbar-page .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: #1a1e2b;
+  z-index: 200;
+  flex-direction: column;
+  padding: 90px 32px 40px;
+  overflow-y: auto;
+}
+
+.navbar-page .mobile-menu.open {
+  display: flex;
+}
+
+.navbar-page .mobile-menu a {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff14;
+  transition: color 0.2s;
+}
+
+.navbar-page .mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+.navbar-page .mobile-menu a:hover,
+.navbar-page .mobile-menu a.active {
+  color: #f3c228;
+}
+
+.navbar-page .mobile-menu .mobile-sub {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-page .mobile-menu .mobile-sub-label {
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffffff50;
+  font-size: 28px;
+  padding: 16px 0 8px;
+  border-bottom: 1px solid #ffffff14;
+  cursor: default;
+}
+
+.navbar-page .mobile-menu .mobile-sub a {
+  padding-left: 20px;
+}
+
+.navbar-page .mobile-menu .mobile-sub a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b2b7bf;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff0a;
+}
+
+/* ============================================================
+   GLOBAL — hindre horisontal scroll på mobil
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .construction-hero,
+  .om-oss-seksjon,
+  .tjenester-seksjon,
+  .kontakt-seksjon,
+  .footer-brevan-style,
+  .tjeneste-hero,
+  .tjeneste-content,
+  .om-oss-page,
+  .kontakt-hero,
+  .kontakt-kart,
+  .referanser-seksjon {
+    max-width: 100vw;
+  }
+}
+
+/* ============================================================
+   UNDERSIDER — tjeneste-hero, tjeneste-content, om-oss-page
+   Responsive overrides for subpage-specific CSS.
+   ============================================================ */
+
+
+/* ============================================================
+   TABLET — max 1024px
+   ============================================================
+
+   Covers: index.html sections + undersider (tjeneste, om-oss,
+   kontakt-oss, referanser, prosjekter).
+   ============================================================ */
+
+@media (max-width: 1024px) {
+
+  /* --- Navbar --- */
+  .navbar-page .navbar {
+    height: 60px;
+  }
+
+  .navbar-page .nav-link,
+  .navbar-page .nav-dropdown,
+  .navbar-page .ellipse {
+    display: none !important;
+  }
+
+  .navbar-page .hamburger {
+    display: flex;
+  }
+
+  .navbar-page .t-MRER-BYGGSERVICE {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  /* --- Hero — split layout allerede fra tablet --- */
+  .construction-hero {
+    min-width: 0;
+    height: auto;
+    min-height: auto;
+    overflow: hidden;
+    background-color: #1a1e2b;
+  }
+
+  .construction-hero .right-column {
+    display: none;
+  }
+
+  .construction-hero .photo-frame {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1e2b;
+    padding: 0 32px;
+  }
+
+  .construction-hero .PHOTO-BG {
+    position: relative;
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    height: 55svh;
+    min-height: 300px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .construction-hero .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55svh;
+    min-height: 300px;
+    max-height: 500px;
+    background: linear-gradient(
+      to bottom,
+      transparent 60%,
+      #1a1e2b40 80%,
+      #1a1e2b 100%
+    );
+  }
+
+  .construction-hero .rectangle-2 {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  .construction-hero .KVALITET-PRESISJON {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 16px;
+  }
+
+  .construction-hero .t-mrer-byggteknikker {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .construction-hero .hero-cta {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 28px;
+    align-self: flex-start;
+  }
+
+  .construction-hero .rectangle-3 {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .construction-hero .ellipse-2 {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 32px;
+  }
+
+  /* --- Om oss --- */
+  .om-oss-seksjon {
+    min-width: 0;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 32px;
+  }
+
+  .om-oss-seksjon .right-column { display: none; }
+
+  .om-oss-seksjon .rectangle-2,
+  .om-oss-seksjon .OM-OSS-ST-LE,
+  .om-oss-seksjon .etablert-i,
+  .om-oss-seksjon .rectangle-3,
+  .om-oss-seksjon .t-mrer-og,
+  .om-oss-seksjon .les-mer {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .om-oss-seksjon .rectangle-2 {
+    width: 28px;
+    height: 2px;
+    margin-bottom: 12px;
+  }
+
+  .om-oss-seksjon .OM-OSS-ST-LE {
+    margin-bottom: 16px;
+  }
+
+  .om-oss-seksjon .etablert-i {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+
+  .om-oss-seksjon .rectangle-3 {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .om-oss-seksjon .t-mrer-og {
+    margin-bottom: 32px;
+  }
+
+  .om-oss-seksjon .les-mer {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+    text-decoration: none;
+  }
+
+  .om-oss-seksjon .les-mer-2 {
+    margin: 0;
+  }
+
+  .om-oss-seksjon .video-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 360px;
+    order: 10;
+  }
+
+  .om-oss-seksjon .VIDEO-THUMB {
+    width: 100%;
+    height: 100%;
+  }
+
+  .om-oss-seksjon .rectangle {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* --- Tjenester --- */
+  .tjenester-seksjon {
+    min-width: 0;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 32px;
+    gap: 24px;
+  }
+
+  .tjenester-seksjon .frame { display: none; }
+
+  .tjenester-seksjon .rectangle,
+  .tjenester-seksjon .text-wrapper,
+  .tjenester-seksjon .div {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .tjenester-seksjon .rectangle {
+    width: 28px;
+    height: 2px;
+  }
+
+  .tjenester-seksjon > .div {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+
+  .tjenester-seksjon .card-nybygg,
+  .tjenester-seksjon .card-tilbygg-pbygg,
+  .tjenester-seksjon .card-renovering,
+  .tjenester-seksjon .card-oppussing,
+  .tjenester-seksjon .card-garasje,
+  .tjenester-seksjon .card-tegning-av {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+  }
+
+  .tjenester-seksjon .card-bilde {
+    width: 100%;
+  }
+
+  .tjenester-seksjon .rectangle-2 {
+    width: 100%;
+  }
+
+  .tjenester-seksjon .frame-2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    height: auto;
+  }
+
+  .tjenester-seksjon .text-wrapper-5 {
+    margin: 0;
+    width: auto;
+    height: auto;
+    white-space: normal;
+    font-size: 15px;
+  }
+
+  .tjenester-seksjon .ta-kontakt-wrapper {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  /* --- Kontakt --- */
+  .kontakt-seksjon {
+    min-width: 0;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 32px;
+  }
+
+  .kontakt-seksjon .frame { display: none; }
+
+  .kontakt-seksjon .rectangle,
+  .kontakt-seksjon .text-wrapper,
+  .kontakt-seksjon .div,
+  .kontakt-seksjon .vi-svarer-raskt-ta,
+  .kontakt-seksjon .rectangle-2,
+  .kontakt-seksjon .text-wrapper-2,
+  .kontakt-seksjon .text-wrapper-3,
+  .kontakt-seksjon .rectangle-3,
+  .kontakt-seksjon .text-wrapper-4,
+  .kontakt-seksjon .text-wrapper-5,
+  .kontakt-seksjon .rectangle-4,
+  .kontakt-seksjon .text-wrapper-6,
+  .kontakt-seksjon .text-wrapper-7,
+  .kontakt-seksjon .rectangle-5 {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .kontakt-seksjon .rectangle {
+    width: 28px;
+    height: 2px;
+    margin-bottom: 12px;
+  }
+
+  .kontakt-seksjon .text-wrapper {
+    margin-bottom: 8px;
+  }
+
+  .kontakt-seksjon > .div {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .kontakt-seksjon .vi-svarer-raskt-ta {
+    margin-bottom: 32px;
+  }
+
+  .kontakt-seksjon .rectangle-2,
+  .kontakt-seksjon .rectangle-3,
+  .kontakt-seksjon .rectangle-4,
+  .kontakt-seksjon .rectangle-5 {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 16px;
+  }
+
+  .kontakt-seksjon .text-wrapper-2,
+  .kontakt-seksjon .text-wrapper-4,
+  .kontakt-seksjon .text-wrapper-6 {
+    margin-bottom: 4px;
+  }
+
+  .kontakt-seksjon .text-wrapper-3,
+  .kontakt-seksjon .text-wrapper-5,
+  .kontakt-seksjon .text-wrapper-7 {
+    margin-bottom: 20px;
+  }
+
+  .kontakt-seksjon .form-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 648px;
+    margin-top: 40px;
+  }
+
+  /* Skaler input-bokser og knapp til full bredde */
+  .kontakt-seksjon .form-card .rectangle-6,
+  .kontakt-seksjon .form-card .rectangle-7,
+  .kontakt-seksjon .form-card .rectangle-8,
+  .kontakt-seksjon .form-card .rectangle-9 {
+    left: 24px;
+    width: calc(100% - 48px);
+  }
+
+  .kontakt-seksjon .form-card .text-wrapper-8 { left: 24px; }
+  .kontakt-seksjon .form-card .text-wrapper-9 { left: 24px; }
+  .kontakt-seksjon .form-card .text-wrapper-10 { left: 40px; }
+  .kontakt-seksjon .form-card .text-wrapper-11 { left: 24px; }
+  .kontakt-seksjon .form-card .text-wrapper-12 { left: 40px; }
+  .kontakt-seksjon .form-card .text-wrapper-13 { left: 24px; }
+  .kontakt-seksjon .form-card .text-wrapper-14 { left: 40px; }
+  .kontakt-seksjon .form-card .text-wrapper-15 { left: 24px; }
+  .kontakt-seksjon .form-card .text-wrapper-16 { left: 40px; }
+
+  .kontakt-seksjon .form-card .send-melding-wrapper {
+    left: 24px;
+  }
+
+  .kontakt-seksjon .form-card .p {
+    left: 240px;
+    right: 24px;
+    width: auto;
+    white-space: normal;
+  }
+
+  /* --- Tjeneste hero (undersider) --- */
+  .tjeneste-hero {
+    min-width: 0;
+    height: 320px;
+  }
+
+  .tjeneste-hero .hero-bg,
+  .tjeneste-hero .hero-overlay {
+    width: 100%;
+  }
+
+  .tjeneste-hero .right-column {
+    display: none;
+  }
+
+  .tjeneste-hero .hero-title {
+    left: 32px;
+    right: 32px;
+    font-size: 48px;
+  }
+
+  /* --- Tjeneste content (undersider) --- */
+  .tjeneste-content {
+    min-width: 0;
+  }
+
+  .tjeneste-content .content-inner {
+    padding: 48px 32px 64px;
+  }
+
+  .tjeneste-gallery {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 32px 64px;
+  }
+
+  /* --- Kontakt-oss page (underside) --- */
+  .kontakt-hero {
+    min-width: 0;
+    height: 300px;
+  }
+
+  .kontakt-hero__bg,
+  .kontakt-hero__overlay {
+    width: 100%;
+  }
+
+  .kontakt-hero__sidebar {
+    display: none;
+  }
+
+  .kontakt-hero__content {
+    left: 32px;
+  }
+
+  .kontakt-hero__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .kontakt-body {
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    padding: 60px 32px;
+    gap: 48px;
+  }
+
+  .kontakt-info {
+    flex: unset;
+    width: 100%;
+  }
+
+  .kontakt-kart {
+    min-width: 0;
+    height: 300px;
+  }
+
+  /* --- Referanser page (underside) --- */
+  .referanser-seksjon {
+    min-width: 0;
+    padding: 60px 32px;
+  }
+
+  .ref-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* --- Prosjekter page (underside) --- */
+  .prosjekt-seksjon {
+    grid-template-columns: 1fr;
+    padding: 60px 32px;
+    gap: 32px;
+  }
+
+  .prosjekt-seksjon--alt {
+    grid-template-columns: 1fr;
+  }
+
+  .prosjekt-seksjon--alt .prosjekt-galleri {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .prosjekt-seksjon--alt .prosjekt-info {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .prosjekter-cta {
+    padding: 0 32px;
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* --- Om oss page (underside) --- */
+  .om-oss-page {
+    min-width: 0;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 32px;
+  }
+
+  .om-oss-page .right-column {
+    display: none;
+  }
+
+  .intro-block {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .heading-large {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .divider {
+    width: 100%;
+  }
+
+  .center-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 360px;
+    margin-bottom: 48px;
+  }
+
+  .bottom-section {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 48px;
+    padding-bottom: 60px;
+  }
+
+  .bottom-left,
+  .bottom-right {
+    width: 100%;
+  }
+
+  /* --- Footer --- */
+  .footer-brevan-style {
+    min-width: 0;
+    height: auto;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 32px 24px;
+    position: relative;
+  }
+
+  .footer-brevan-style .separator {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    right: 32px;
+    width: auto;
+  }
+
+  .footer-brevan-style .text-wrapper,
+  .footer-brevan-style .div,
+  .footer-brevan-style .text-wrapper-2,
+  .footer-brevan-style .text-wrapper-3,
+  .footer-brevan-style .text-wrapper-4,
+  .footer-brevan-style .text-wrapper-5,
+  .footer-brevan-style .text-wrapper-6,
+  .footer-brevan-style .text-wrapper-7,
+  .footer-brevan-style .text-wrapper-8,
+  .footer-brevan-style .text-wrapper-9,
+  .footer-brevan-style .text-wrapper-10,
+  .footer-brevan-style .element-orkland-t,
+  .footer-brevan-style .text-wrapper-11 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+  }
+
+  .footer-brevan-style .text-wrapper {
+    margin-bottom: 4px;
+  }
+
+  .footer-brevan-style .div {
+    margin-bottom: 32px;
+  }
+
+  .footer-brevan-style .text-wrapper-2 {
+    margin-bottom: 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-brevan-style .text-wrapper-3,
+  .footer-brevan-style .text-wrapper-4,
+  .footer-brevan-style .text-wrapper-5,
+  .footer-brevan-style .text-wrapper-6 {
+    margin-bottom: 8px;
+  }
+
+  .footer-brevan-style .text-wrapper-6 {
+    margin-bottom: 32px;
+  }
+
+  .footer-brevan-style .text-wrapper-7 {
+    margin-bottom: 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-brevan-style .text-wrapper-8,
+  .footer-brevan-style .text-wrapper-9,
+  .footer-brevan-style .text-wrapper-10 {
+    margin-bottom: 8px;
+  }
+
+  .footer-brevan-style .text-wrapper-10 {
+    margin-bottom: 32px;
+  }
+
+  .footer-brevan-style .bottom-separator {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .footer-brevan-style .element-orkland-t {
+    margin-bottom: 4px;
+  }
+}
+
+
+/* ============================================================
+   MOBIL — max 768px
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* --- Navbar --- */
+  .navbar-page .navbar {
+    height: 56px;
+  }
+
+  .navbar-page .image {
+    margin-left: 20px;
+    width: 22px;
+    height: 26px;
+  }
+
+  .navbar-page .t-MRER-BYGGSERVICE {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-left: 10px;
+  }
+
+  /* --- Hero — skalering for mobil --- */
+  .construction-hero .photo-frame {
+    padding: 0 24px;
+  }
+
+  .construction-hero .PHOTO-BG {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    height: 50svh;
+    min-height: 260px;
+    max-height: 400px;
+  }
+
+  .construction-hero .dark-overlay {
+    height: 50svh;
+    min-height: 260px;
+    max-height: 400px;
+  }
+
+  .construction-hero .KVALITET-PRESISJON {
+    font-size: 10px;
+  }
+
+  .construction-hero .t-mrer-byggteknikker {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .construction-hero .hero-cta {
+    padding: 12px 28px;
+    font-size: 12px;
+  }
+
+  /* --- Om oss --- */
+  .om-oss-seksjon {
+    padding: 48px 24px;
+  }
+
+  .om-oss-seksjon .etablert-i {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .om-oss-seksjon .t-mrer-og {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .om-oss-seksjon .t-mrer-og br {
+    display: none;
+  }
+
+  .om-oss-seksjon .video-container {
+    height: 260px;
+  }
+
+  /* --- Tjenester --- */
+  .tjenester-seksjon {
+    padding: 48px 24px;
+  }
+
+  .tjenester-seksjon > .div {
+    font-size: 30px;
+  }
+
+  .tjenester-seksjon .card-nybygg,
+  .tjenester-seksjon .card-tilbygg-pbygg,
+  .tjenester-seksjon .card-renovering,
+  .tjenester-seksjon .card-oppussing,
+  .tjenester-seksjon .card-garasje,
+  .tjenester-seksjon .card-tegning-av {
+    min-height: 300px;
+  }
+
+  .tjenester-seksjon .card-bilde {
+    height: 180px;
+  }
+
+  .tjenester-seksjon .rectangle-2 {
+    width: 100%;
+    height: 180px;
+  }
+
+  .tjenester-seksjon .text-wrapper-3 {
+    top: 210px;
+    font-size: 20px;
+  }
+
+  .tjenester-seksjon .text-wrapper-2 {
+    top: 194px;
+  }
+
+  .tjenester-seksjon .text-wrapper-4 {
+    top: 244px;
+    font-size: 13px;
+  }
+
+  .tjenester-seksjon .les-mer {
+    top: 256px;
+    right: 24px;
+    left: auto;
+  }
+
+  .tjenester-seksjon .rectangle-3 {
+    top: 297px;
+  }
+
+  .tjenester-seksjon .frame-2 {
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  /* --- Kontakt --- */
+  .kontakt-seksjon {
+    padding: 48px 24px;
+  }
+
+  .kontakt-seksjon > .div {
+    font-size: 36px;
+  }
+
+  .kontakt-seksjon .vi-svarer-raskt-ta {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .kontakt-seksjon .vi-svarer-raskt-ta br {
+    display: none;
+  }
+
+  .kontakt-seksjon .text-wrapper-3,
+  .kontakt-seksjon .text-wrapper-5,
+  .kontakt-seksjon .text-wrapper-7 {
+    font-size: 18px;
+  }
+
+  .kontakt-seksjon .form-card {
+    padding: 32px 20px;
+    border-radius: 6px;
+  }
+
+  /* --- Kontakt-oss (underside) --- */
+  .kontakt-hero {
+    height: 260px;
+  }
+
+  .kontakt-hero__content {
+    left: 24px;
+  }
+
+  .kontakt-hero__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .kontakt-body {
+    padding: 48px 24px;
+    gap: 36px;
+  }
+
+  .kontakt-form__row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .kontakt-form__captcha-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kontakt-kart {
+    height: 240px;
+  }
+
+  /* --- Referanser (underside) --- */
+  .referanser-seksjon {
+    padding: 48px 24px;
+  }
+
+  .ref-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* --- Prosjekter (underside) --- */
+  .prosjekt-seksjon {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  .prosjekt-info__tittel {
+    font-size: 26px;
+  }
+
+  .prosjekt-galleri__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prosjekter-cta {
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prosjekter-cta__tekst {
+    font-size: 15px;
+  }
+
+  /* --- Tjeneste hero (undersider) --- */
+  .tjeneste-hero {
+    height: 280px;
+  }
+
+  .tjeneste-hero .hero-title {
+    left: 24px;
+    right: 24px;
+    font-size: 32px;
+    bottom: 40px;
+  }
+
+  /* --- Tjeneste content (undersider) --- */
+  .tjeneste-content .content-inner {
+    padding: 36px 24px 48px;
+  }
+
+  .tjeneste-content p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .tjeneste-gallery {
+    padding: 0 24px 48px;
+    gap: 6px;
+  }
+
+  /* --- Om oss page (underside) --- */
+  .om-oss-page {
+    padding: 48px 24px;
+  }
+
+  .heading-large {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .center-photo {
+    height: 260px;
+  }
+
+  .bottom-section {
+    gap: 36px;
+  }
+
+  /* --- Footer --- */
+  .footer-brevan-style {
+    padding: 40px 24px 20px;
+  }
+
+  .footer-brevan-style .separator {
+    left: 24px;
+    right: 24px;
+  }
+
+  .footer-brevan-style .text-wrapper {
+    font-size: 14px;
+  }
+}
+
+
+/* ============================================================
+   LITEN MOBIL — max 400px
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+  .construction-hero .photo-frame {
+    padding: 0 20px;
+  }
+
+  .construction-hero .PHOTO-BG {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .construction-hero .t-mrer-byggteknikker {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .construction-hero .KVALITET-PRESISJON {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .om-oss-seksjon { padding: 40px 20px; }
+  .om-oss-seksjon .etablert-i {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .tjenester-seksjon { padding: 40px 20px; }
+  .tjenester-seksjon > .div { font-size: 26px; }
+
+  .kontakt-seksjon { padding: 40px 20px; }
+  .kontakt-seksjon > .div { font-size: 30px; }
+
+  .tjeneste-hero .hero-title { font-size: 28px; left: 20px; right: 20px; }
+  .tjeneste-content .content-inner { padding: 32px 20px 40px; }
+  .tjeneste-gallery { padding: 0 20px 40px; }
+
+  .om-oss-page { padding: 40px 20px; }
+  .heading-large { font-size: 30px; line-height: 38px; }
+
+  .kontakt-hero__title { font-size: 30px; line-height: 38px; }
+  .kontakt-body { padding: 36px 20px; }
+  .kontakt-form-card { padding: 28px 20px; }
+
+  .referanser-seksjon { padding: 40px 20px; }
+  .prosjekt-seksjon { padding: 40px 20px; }
+  .prosjekter-cta { padding: 16px 20px; }
+
+  .footer-brevan-style { padding: 36px 20px 16px; }
+  .footer-brevan-style .separator { left: 20px; right: 20px; }
+}

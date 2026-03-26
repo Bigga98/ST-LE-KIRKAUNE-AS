@@ -18,15 +18,19 @@
 }
 
 .navbar-page .image {
-  margin-left: 31px;
+  margin-left: 0;
   width: 26px;
   height: 31px;
   object-fit: cover;
   flex-shrink: 0;
 }
 
+.navbar-page .navbar > a:first-child {
+  margin-left: 31px;
+}
+
 .navbar-page .t-MRER-BYGGSERVICE {
-  margin-left: 15px;
+  margin-left: 0;
   font-family: "Inter", Helvetica;
   font-weight: 300;
   color: #ffffff;
