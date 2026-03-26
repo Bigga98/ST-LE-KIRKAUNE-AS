@@ -152,6 +152,7 @@
   position: absolute;
   top: 360px;
   left: 80px;
+  max-width: 480px;
   font-family: "Inter", Helvetica;
   font-weight: 300;
   color: #1a1e2bbf;
