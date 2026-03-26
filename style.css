@@ -45,7 +45,7 @@
 .om-oss-seksjon .video-container {
   position: absolute;
   top: 60px;
-  left: 580px;
+  left: 680px;
   width: 680px;
   height: 572px;
   background-color: #1a1e2b;
@@ -866,7 +866,7 @@
 .tjenester-seksjon .card-garasje,
 .tjenester-seksjon .card-tegning-av {
   position: absolute;
-  width: 580px;
+  width: 624px;
   height: 340px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -875,11 +875,11 @@
 }
 
 .tjenester-seksjon .card-nybygg     { top: 210px; left: 80px; }
-.tjenester-seksjon .card-tilbygg-pbygg { top: 210px; left: 692px; }
+.tjenester-seksjon .card-tilbygg-pbygg { top: 210px; left: 736px; }
 .tjenester-seksjon .card-renovering { top: 582px; left: 80px; }
-.tjenester-seksjon .card-oppussing  { top: 582px; left: 692px; }
+.tjenester-seksjon .card-oppussing  { top: 582px; left: 736px; }
 .tjenester-seksjon .card-garasje    { top: 954px; left: 80px; }
-.tjenester-seksjon .card-tegning-av { top: 954px; left: 692px; }
+.tjenester-seksjon .card-tegning-av { top: 954px; left: 736px; }
 
 .tjenester-seksjon .image-placeholder {
   position: absolute;
@@ -894,7 +894,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 580px;
+  width: 624px;
   height: 210px;
   object-fit: cover;
 }
@@ -962,7 +962,7 @@
 .tjenester-seksjon .les-mer {
   position: absolute;
   top: 293px;
-  left: 480px;
+  left: 524px;
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #1a1e2bd9;
@@ -975,7 +975,7 @@
   position: absolute;
   top: 337px;
   left: 0;
-  width: 580px;
+  width: 624px;
   height: 3px;
   background-color: #f3c228;
 }
@@ -985,9 +985,9 @@
   position: absolute;
   top: 1350px;
   left: 80px;
-  width: 1192px;
+  width: 1280px;
   height: 64px;
-  gap: 538px;
+  gap: 626px;
   background-color: #1a1e2b;
   border-radius: 4px;
   display: flex;

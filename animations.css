@@ -1,0 +1,112 @@
+/* ============================================================
+   ANIMATIONS — Ståle Kirkaune AS
+   Enkel, diskret motion for en profesjonell håndverkerside.
+   ============================================================ */
+
+/* --- Entrance (scroll-triggered via .is-visible klasse) --- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger for kort i grid */
+.fade-up.delay-1 { transition-delay: 0.07s; }
+.fade-up.delay-2 { transition-delay: 0.14s; }
+.fade-up.delay-3 { transition-delay: 0.21s; }
+.fade-up.delay-4 { transition-delay: 0.28s; }
+.fade-up.delay-5 { transition-delay: 0.35s; }
+
+/* --- Tjenestekort hover --- */
+.tjenester-seksjon .card-nybygg,
+.tjenester-seksjon .card-tilbygg-pbygg,
+.tjenester-seksjon .card-renovering,
+.tjenester-seksjon .card-oppussing,
+.tjenester-seksjon .card-garasje,
+.tjenester-seksjon .card-tegning-av {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tjenester-seksjon .card-nybygg:hover,
+.tjenester-seksjon .card-tilbygg-pbygg:hover,
+.tjenester-seksjon .card-renovering:hover,
+.tjenester-seksjon .card-oppussing:hover,
+.tjenester-seksjon .card-garasje:hover,
+.tjenester-seksjon .card-tegning-av:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(26, 30, 43, 0.10);
+}
+
+/* --- "Les mer" knapper — pil-nudge --- */
+.om-oss-seksjon .les-mer,
+.tjenester-seksjon .les-mer {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.om-oss-seksjon .les-mer:hover {
+  background-color: #1a1e2b;
+  color: #ffffff;
+}
+
+.om-oss-seksjon .les-mer:hover .les-mer-2 {
+  color: #ffffff;
+}
+
+/* --- Hero CTA --- */
+.construction-hero .hero-cta {
+  transition: background-color 0.3s ease, transform 0.25s ease;
+}
+
+.construction-hero .hero-cta:hover {
+  transform: translateY(-2px);
+}
+
+/* --- Navbar dropdown — fade + slide inn --- */
+.navbar-page .dropdown-menu {
+  display: block !important;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.navbar-page .nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* --- Navbar scroll-shadow --- */
+.navbar-page.scrolled {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-page {
+  transition: box-shadow 0.3s ease;
+}
+
+/* --- prefers-reduced-motion: fjern alle animasjoner --- */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .tjenester-seksjon .card-nybygg,
+  .tjenester-seksjon .card-tilbygg-pbygg,
+  .tjenester-seksjon .card-renovering,
+  .tjenester-seksjon .card-oppussing,
+  .tjenester-seksjon .card-garasje,
+  .tjenester-seksjon .card-tegning-av,
+  .om-oss-seksjon .les-mer,
+  .construction-hero .hero-cta,
+  .navbar-page .dropdown-menu {
+    transition: none;
+  }
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
   </head>
   <body>
     <div id="navbar-inject"></div>
@@ -36,12 +37,7 @@
     </div>
 
     <!-- Om Oss Seksjon -->
-    <div class="om-oss-seksjon">
-
-      <!-- Right column -->
-      <div class="right-column">
-        <div class="OM-OSS-ETABLERT">OM&nbsp;&nbsp;OSS&nbsp;&nbsp;·&nbsp;&nbsp;ETABLERT&nbsp;&nbsp;2014</div>
-      </div>
+    <div class="om-oss-seksjon fade-up">
 
       <!-- Video -->
       <div class="video-container">
@@ -69,17 +65,12 @@
     <!-- Tjenester Seksjon -->
     <div class="tjenester-seksjon">
 
-      <!-- Right column -->
-      <div class="frame">
-        <div class="TJENESTER-ST-LE">TJENESTER&nbsp;&nbsp;·&nbsp;&nbsp;STÅLE KIRKAUNE AS</div>
-      </div>
-
       <div class="rectangle"></div>
       <div class="text-wrapper">VÅRE TJENESTER</div>
       <div class="div">Hva vi gjør.</div>
 
       <!-- 01 Nybygg -->
-      <div class="card-nybygg">
+      <div class="card-nybygg fade-up delay-1">
         <img class="card-bilde" src="img/hytte-hero.jpg" alt="Nybygg" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">01</div>
@@ -90,7 +81,7 @@
       </div>
 
       <!-- 02 Tilbygg / Påbygg -->
-      <div class="card-tilbygg-pbygg">
+      <div class="card-tilbygg-pbygg fade-up delay-2">
         <img class="card-bilde" src="img/buvika.jpg" alt="Tilbygg / Påbygg" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">02</div>
@@ -101,7 +92,7 @@
       </div>
 
       <!-- 03 Renovering -->
-      <div class="card-renovering">
+      <div class="card-renovering fade-up delay-1">
         <img class="card-bilde" src="img/reno.jpg" alt="Renovering" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">03</div>
@@ -112,7 +103,7 @@
       </div>
 
       <!-- 04 Oppussing -->
-      <div class="card-oppussing">
+      <div class="card-oppussing fade-up delay-2">
         <img class="card-bilde" src="img/hytte3.jpg" alt="Oppussing" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">04</div>
@@ -123,7 +114,7 @@
       </div>
 
       <!-- 05 Garasje -->
-      <div class="card-garasje">
+      <div class="card-garasje fade-up delay-1">
         <img class="card-bilde" src="img/buvika3.jpg" alt="Garasje" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">05</div>
@@ -134,7 +125,7 @@
       </div>
 
       <!-- 06 Tegning av prosjekt -->
-      <div class="card-tegning-av">
+      <div class="card-tegning-av fade-up delay-2">
         <img class="card-bilde" src="img/tegning-hero.png" alt="Tegning av prosjekt" />
         <div class="rectangle-2"></div>
         <div class="text-wrapper-2">06</div>
@@ -220,5 +211,6 @@
     </div>
 
   <script src="navbar.js"></script>
+  <script src="animations.js"></script>
   </body>
 </html>
